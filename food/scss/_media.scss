@@ -1,0 +1,269 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.scroll-text {
+		margin-top: -44px;
+	}
+
+	.menu-xs {
+		display: none;
+	}
+
+	.toggle-mnu {
+		display: block;
+	}
+	
+}
+
+// ≥991px
+@include media-breakpoint-down(md) {
+	.section-one {
+		h1 {
+			font-size: 50px;
+		}
+	}
+
+	.welcome-restaurant {
+		h3 {
+			margin-bottom: 25px;
+		}
+		h2 {
+			margin-bottom: 6px;
+		}
+	} 
+
+	#accordion {
+		ul {
+			li {
+					.acc-body {
+						p {
+							font-size: 13px;
+						}
+					} 
+			}
+		} 
+	} 
+
+	.welcome-buttom {
+		margin-top: 12px;
+	}
+
+	.welcome-restaurant {
+		width: calc(51.5% - 128px);
+	}
+	.book-center {
+		width: calc(50% - 20px);
+	}
+	.book-left {
+		width: 25%;
+	}
+	.book-right {
+		width: 25%;
+	}
+	.img-responsive {
+		max-width: none;
+		width: 100%;
+	}
+	.restaurant-wrap {
+		padding-right: 0;
+	}
+
+	.menu-xs {
+		display: none;
+	}
+
+	.toggle-mnu {
+		display: block;
+	}
+	
+}
+
+// ≥767px
+@include media-breakpoint-down(sm) {	
+
+	.welcome-restaurant {
+		width: calc(51.5% - 37px);
+		h2 {
+			margin-bottom: 0px;
+			padding-bottom: 6px;
+		}
+		h3 {
+			padding-bottom: 4px;
+			margin-bottom: 11px;
+		}
+	}
+
+	#accordion {
+		ul {
+			a {
+				font-size: 13px;
+				&:before,&:after {
+					height: 6px;
+				}
+			}
+		} 
+	} 
+
+	#accordion {
+		ul {
+			li {
+					.acc-body {
+						p {
+							font-size: 11px;
+						}
+					} 
+			}
+		} 
+	} 
+
+	.welcome-buttom {
+		padding: 5px 35px;
+		margin-top: 9px;
+	}
+
+
+
+	.welcome-restaurant {
+		h2 {
+			font-size: 25px;
+		}
+		h3::before {
+			margin-left: -10.5%;
+		}
+	} 
+
+	.table {
+		flex-wrap: wrap;
+	}
+
+	.book-center {
+		order: 3;
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	.my-form {
+		width: 100%;
+		input {
+			width: 100%;
+		}
+	}
+
+	.book-left {
+		width: calc(50% - 10px);
+	}
+
+	.book-right {
+		width: calc(50% - 10px);
+	}
+
+	.menu-xs {
+		display: none;
+	}
+
+	.toggle-mnu {
+		display: block;
+	}
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.section-one {
+		h1 {
+			font-size: 40px;
+			margin-top: 41px;
+		}
+	} 
+	.restaurant-wrap {
+		flex-wrap: wrap;
+	}
+
+	.restaurant-food {
+		width: 100%;
+	}
+
+	.welcome-restaurant {
+		order: 2;
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	.table {
+		margin-top: 57px;
+	}
+
+	.welcome-restaurant {
+		h2 {
+			font-size: 30px;
+		}
+		h3 {
+			margin-bottom: 20px;
+			&::before {
+				left: 52%;
+			}
+		}
+	} 
+
+	.welcome-buttom {
+		margin-top: 13px;
+	}
+
+	.btn-book {
+		margin-top: 35px;
+	}
+
+	.menu-xs {
+		display: none;
+	}
+
+	.toggle-mnu {
+		display: block;
+	}
+
+	.footer-menu {
+		li {
+			margin-right: 30px;
+		}
+	} 
+ .section-one {
+		h1 {
+    	font-size: 25px;
+    	margin-top: 0;
+		}
+		h2 {
+			font-size: 18px;
+      margin-top: 5px;
+		}
+	} 
+	
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+
+	
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}

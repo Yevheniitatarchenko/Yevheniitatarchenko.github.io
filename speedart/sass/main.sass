@@ -1,0 +1,660 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+h1, h2, h3, h4, h5, h6
+	font-family: "OpenSans-Light", sans-serif
+	font-weight: 400
+	line-height: 1.4
+	color: #fff
+
+
+.button
+		display: inline-block
+		border: none
+		color: #fff
+		font-family: "OpenSans-Regular", sans-serif
+		text-decoration: none
+		background-color: $accent
+		padding: 10px 35px
+		font-size: 14px
+		text-transform: uppercase
+		line-height: 24px
+		letter-spacing: 0.5px
+		border-radius: 2px
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		&:focus, &:hover
+				text-decoration: none
+				color: #fff
+		&:hover
+				background-color: lighten($accent, 5%)
+				&::after
+						opacity: .22
+		&:active
+				background-color: darken($accent, 5%)
+				&::after
+						opacity: .32    
+
+
+// nav,
+// .header-content
+// 	ul
+// 		list-style-type: none
+// 		padding: 0
+// 		margin: 0
+// 	li
+// 		display: inline-block
+
+.img-responsive
+	max-width: 100%
+	height: auto
+
+
+.responsive-img
+	display: block
+	max-width: 100%
+	height: auto
+
+.fotorama__nav--dots .fotorama__nav__frame 
+	display: none!important
+
+.fotorama__stage
+	height: 700px!important
+	.fotorama__img
+		height: 700px!important
+		background-position: right bottom
+		object-fit: cover
+
+.fotorama
+	position: relative
+	&__arr-
+		&-next, &-prev
+			&::before
+				font-family: fontawesome
+				font-size: 50px
+				color: #fff
+		&-next
+			right: 250px
+			margin-top: 8px
+			&::before
+				content: '\f105'
+		&-prev
+			left: 250px
+			margin-top: 8px
+			&::before
+				content: '\f104'
+
+.fotorama__arr--disabled 
+	opacity: 1
+
+.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr, .fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__fullscreen-icon 
+	opacity: 1
+
+.fotorama__wrap--css3, .fotorama__wrap--video, .fotorama__arr--prev
+	transform: translate3d(0, 0, 0)!important 
+
+.fotorama__wrap--css3, .fotorama__wrap--video, .fotorama__arr--next 
+	transform: translate3d(0, 0, 0)!important
+
+.top-line
+	min-height: 85px
+	position: absolute
+	text-align: center
+	z-index: 2
+	max-width: 1170px
+	left: 0
+	right: 0
+	padding: 28px 0
+	webkit-justify-content: space-between
+	ul
+		margin-top: -10px
+		li
+			margin: 0
+			padding: 0
+			display: inline
+			a
+				color: #fff
+				display: inline-block
+				padding: 0 24px
+				font-size: 14px
+				line-height: 45px
+				font-family: "OpenSans-Light", sans-serif
+				text-transform: uppercase
+				text-decoration: none
+				&:hover, &:focus
+					color: $accent
+					transition: color .5s ease
+
+.search
+	text-align: left
+	margin-right: -40px
+	color: #AAAFB2
+
+.logo
+	margin-left: 15px
+	img
+		padding-right: 13px
+		margin-top: -4px
+	a
+		color: #fff
+		font-family: "OpenSans-Light", sans-serif
+		font-size: 19px
+		text-decoration: none
+
+
+.top-border
+	position: absolute
+	margin-top: 55px
+	margin-left: -80px
+	border-bottom: 1px solid white
+	width: 1354px
+
+.svet
+	position: absolute
+	z-index: 1
+	text-align: center
+	margin-top: 305px
+	margin-left: 368px
+	// left: calc(50% - 400px)
+	i
+		color: #fff
+		font-size: 24px
+	h1
+		margin-top: 48px
+		font-size: 46
+		line-height: 37px
+		color: #fff
+		font-family: "OpenSans-Regular", sans-serif
+		font-weight: 600
+	p
+		font-size: 15px
+		color: #fff
+		line-height: 36px
+		letter-spacing: 4px
+		font-family: "OpenSans-Regular", sans-serif
+
+.s-wide
+	padding: 100px 0 75px
+	background-color: #FFF
+
+.s-gray
+	padding: 100px 0 75px
+	background-color: #f7f7f7
+
+.s-dark
+	padding: 70px 0 80px
+	background-color: #333333
+
+
+
+.item-vertical
+	margin-top: 92px 0
+	text-align: center
+
+.item-vertical
+	img
+		//width: 35px
+		height: auto
+	h3
+		font-size: 21px
+		line-height: 37px
+		color: #515151
+	p
+		font-family: "OpenSans-Light", sans-serif
+		font-size: 14px
+		line-height: 21px
+		color: #515151
+
+.caption
+	text-align: center
+	padding-top: 100px
+	h2
+		font-size: 30px
+		line-height: 21px
+		color: #515151
+	p
+		font-family: "OpenSans-Light", sans-serif
+		font-size: 15px
+		line-height: 16px
+		color: #515151
+
+ 
+
+.portfolio-item
+	width: 20%
+	max-height: 155px
+	overflow: hidden
+	position: relative
+	display: block
+	img
+		+mt(.5s)
+	&:hover
+		.portfolio-item-content
+			opacity: 1
+			transform: scale(1.1)
+		img
+			transform: scale(1.2)
+	.portfolio-item-content
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(6, 118, 159, .75)
+		opacity: 0
+		transition: .3s ease
+		transform: scale(1.1)
+		img
+			margin: 55px 130px
+			height: 10px
+		p
+			margin-top: -50px
+			color: #fff
+			text-align: center
+			font-size: 14px
+			line-height: 16px
+			font-family: "OpenSans-Light", sans-serif
+
+.s-photos
+	margin-right: -4px
+	a
+		display: inline-block
+		margin: -2px 0 -8px -4px
+
+.s-Lifts
+	img
+		margin-bottom: -20px
+	h2
+		font-family: "OpenSans-Light", sans-serif
+		color: #515151
+		font-size: 23px
+		line-height: 23px
+		margin-bottom: 34px
+	p
+		font-family: "OpenSans-Light", sans-serif
+		color: #515151
+		font-size: 15px
+		line-height: 24px
+	.line
+		border-left: 3px solid $accent
+		padding-left: 18px
+	.line-top
+
+		margin-top: -27px
+	.banner
+		margin-top: 45px
+		span
+			padding-right: 11px
+			color: $accent
+		p
+		font-family: "OpenSans-Light", sans-serif
+		color: #515151
+		font-size: 15px
+		line-height: 24px 
+
+.line
+		border-left: 3px solid $accent
+		padding-left: 18px
+
+.frredom
+	min-height: 500px
+	width: 100%
+	background-position: bottom right
+	text-align: center
+	padding-top: 80px
+	
+	h2
+		color: #fff
+		font-size: 30px
+		line-height: 21px
+		font-family: "OpenSans-Light", sans-serif
+	p
+		color: #fff
+		font-size: 15px
+		line-height: 16px
+		letter-spacing: 2px
+		font-family: "OpenSans-Light", sans-serif
+
+.home-img
+	border-radius: 40px
+	height: 80px
+	width: 80px
+	background-color: $accent
+	margin: auto
+	img
+		margin: auto
+		padding-top: 29px
+		margin-top: 74px
+		
+.home
+	margin-top: 30px
+	h2
+		font-size: 20px
+		font-family: "OpenSans-Light", sans-serif
+		line-height: 24px
+	p
+		margin-top: -13px
+		font-size: 15px
+		font-family: "OpenSans-Light", sans-serif
+		line-height: 24px
+
+.personal
+	font-size: 15px
+	line-height: 24px
+	color: #515151
+	.button 
+		margin-top: 15px
+		
+.twitter
+	width: 335px
+	padding-left: 60px
+	p
+		font-size: 15px
+		line-height: 24px
+		color: #515151
+		&::before
+			position: absolute
+			font-family: fontawesome
+			content: '\f099'
+			left: 0
+			font-size: 28px
+			margin-left: -20px
+			margin-top: 7px
+			padding-left: 60px
+			color: $accent
+	
+	
+.skills
+	p
+		font-size: 15px
+		line-height: 24px
+		color: #515151
+		border-bottom: 5px solid $accent
+		max-width: 360px
+		position: relative
+
+.border-one
+	&::before
+		content: ''
+		position: absolute
+		top: 100%
+		right: 0
+		border-bottom: 5px solid #ededed
+		width: calc(100% - 244px)
+
+.border-two
+	&::before
+		content: ''
+		position: absolute
+		top: 100%
+		right: 0
+		border-bottom: 5px solid #ededed
+		width: calc(100% - 290px)
+
+.border-three
+	&::before
+		content: ''
+		position: absolute
+		top: 100%
+		right: 0
+		border-bottom: 5px solid #ededed
+		width: calc(100% - 180px)
+
+.reviews
+	text-align: center
+
+	.owl-dots
+		width: 100%
+		text-align: center
+		display: inline-block
+		margin-top: 60px
+		.owl-dot
+			width: 8px
+			height: 8px
+			background-color: #f7f7f7
+			border-radius: 10em
+			border: 1px solid $accent
+			display: inline-block
+			margin: 5px
+			transition: background-color .5s ease, transform .5s ease
+			&.active
+				background-color: $accent
+				transform: scale(1.2)
+
+
+.review-photo
+	img
+		border-radius: 100px
+		height: 85px
+		width: 85px!important
+		border: 3px solid #e5e5e5
+		margin: auto
+
+.review-header
+	h2
+		font-size: 30px
+		line-height: 21px
+		color: #515151
+		font-family: "OpenSans-Light", sans-serif
+	p
+		font-size: 15px
+		letter-spacing: 2px
+		font-family: "OpenSans-Light", sans-serif
+.review-text
+	font-size: 16px
+	line-height: 27px
+	font-family: "OpenSans-Light", sans-serif
+	color: #222222
+
+.review-photo
+	margin: 55px 0 50px
+
+.part
+		padding: 50px 0 45px
+
+.partners.owl-carousel
+	text-align: center
+	.partner
+		img
+			height: 58px
+			width: auto!important
+			display: inline-block
+			max-width: 100%
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 2
+		display: block
+		> div
+			position: absolute
+			top: 20px
+			transition: opacity .5s
+			&:hover
+				opacity: .5
+			&.owl-next
+				right: -50px
+			&.owl-prev
+				left: -50px
+			.fa
+				color: $accent
+				font-size: 30px
+
+
+
+.info
+	color: #fff
+	font-family: "OpenSans-Light", sans-serif
+	h2
+		font-size: 23px
+		line-height: 21px
+	p
+		font-size: 14px
+		line-height: 22px
+		color: #a0a0a0
+
+.soc
+	margin-left: -38px
+	li
+		display: inline
+	i
+		font-size: 14px
+		color: #333333
+		text-align: center
+		border-radius: 5px
+		height: 15px
+		width: 22px
+		background-color: #999999
+		margin-right: 10px
+		margin-top: 10px
+	
+
+.contacts
+	color: #fff
+	font-family: "OpenSans-Light", sans-serif
+	h2
+		font-size: 23px
+		line-height: 21px
+	p
+		padding-left: 12pxho
+		font-size: 14px
+		line-height: 22px
+		color: #eeeeee
+		i
+			padding-right: 12px
+
+.footer-photos
+	color: #fff
+	font-family: "OpenSans-Light", sans-serif
+	h2
+		font-size: 23px
+		line-height: 21px
+
+.footer-img
+	width: 60px
+	height: 60px
+	display: inline-block
+	margin: 5px 8px 10px 0px
+	border: 1px solid #999999
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+/*........toggle-mnu.........*/
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 31px
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle-mnu 
+	position: absolute
+	top: 0
+	right: 35px
+
+.hidden-mnu
+	background-color: $gray
+	margin-top: 50px
+	display: none
+	position: relative
+	ul
+		margin-left: -30px
+		padding-top: 20px
+		padding-bottom: 20px
+		li
+			display: block
+			a
+				color: #fff
+
+	> ul
+		> li
+			&.active
+				a
+					text-decoration: underline
+					color: $accent
+			> a
+				&:hover
+					text-decoration: underline
+					color: $accent
+
+
+@import "media" // Всегда в конце
